@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+        <title>JavaScript Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="highscores.html"><button class="highscore-header" id="view-scores">High Scores</button></a>
+            </div>
+
+            <div class="quiz-timer">
+                <p>Time Remaining: 
+                    <span id="quiz-timer">0</span>
+                </p>
+            </div>
+        </header>
+
+        <main class="js-quiz">
+            <div id="start-quiz">
+                <div class="landing-page" id="starting-screen">
+                    <h1>JavaScript Fundamentals Quiz</h1>
+                    <p>Think you know the ins and outs of JavaScript's core fundamentals? Test your knowledge in this short quiz, and see how well you can do!</p>
+                    <button id="start-button">Let's Begin</button>
+                </div>
+            </div>
+
+            <div class="hide" id="quiz-questions">
+                <h2 id="questions-text"></h2>
+                <div class="options" id="options"></div>
+            </div>
+
+            <div class="hide" id="end-quiz">
+                <h2>Quiz Complete!</h2>
+                <p>Congratulations! (Unless you did terribly, then... well, you can always try again at least.) Your final score is: <span id="user-score"></span></p>
+                <p>Enter your name: <input type="text" id="user-name" max="10">
+                    <button id="score-submit">Submit</button>
+                </p>
+            </div>
+
+        </main>
+
+        <script src="./assets/javascript/script.js"></script>
+
+    </body>
+</html>
