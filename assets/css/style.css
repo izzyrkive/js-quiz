@@ -1,0 +1,102 @@
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+
+.main-font {
+    font-family: 'Manrope', sans-serif;
+}
+
+.header-font {
+    font-family: 'Unbounded', cursive;
+}
+
+.js-quiz, .scores {
+    margin: 100px auto 0 auto;
+    max-width: 400px;
+}
+
+p {
+    margin: 15px 15px;
+}
+
+/**/
+
+.landing-page {
+    text-align: center;
+}
+
+.scores {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.quiz-timer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #484848;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+button:hover {
+    background-color: #bae0c5;
+}
+
+.options button {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+ol {
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+  
+  li {
+    padding: 5px;
+}
+  
+  li:nth-child(even) {
+    background-color: #a0c9ac;
+}
+
+/* Tablet Screen */
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+    main {
+      font-size: 90%;
+    }
+  }
+  
+  /* Mobile Screen */
+  @media only screen and (max-width: 500px) {
+    body {
+      padding-top: 218px;
+    }
+  }
+  
+  /* Smaller Mobile Screen */
+  @media only screen and (max-width: 400px) {
+    main {
+      font-size: 80%;
+    }
+  }
